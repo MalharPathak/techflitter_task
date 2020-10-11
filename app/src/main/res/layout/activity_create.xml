@@ -41,8 +41,73 @@
 
     </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
+<EditText
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/appBarLayout"
+    android:hint="Enter Name"
+    android:textColorHint="@android:color/black"
+    android:textColor="@android:color/black"
+    android:backgroundTint="@color/colorPrimary"
+    android:layout_marginTop="35dp"
+    android:id="@+id/et_name"
+    />
 
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_name"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="25dp"
+        android:id="@+id/et_email"
+        />
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:buttonTint="@color/colorPrimary"
+            android:id="@+id/male"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:buttonTint="@color/colorPrimary"
+            android:id="@+id/female"
+            />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/create"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
 
 
 </RelativeLayout>

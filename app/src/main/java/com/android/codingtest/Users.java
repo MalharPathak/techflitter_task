@@ -99,8 +99,6 @@ String DispUrl="https://gorest.co.in/public-api/users";
     }
     private void displayList() {
         final VolleyResponse dispApi = new VolleyResponse(getContext());
-//        dispApi.addHeader("Token","Bearer Token df770ba95557f63ed585a2d41d172e5a3e04053d1b6b32119f598c0fe47a14bc");
-
         dispApi.executeRequest(Request.Method.GET, DispUrl, new VolleyResponse.VolleyCallback() {
             @Override
             public void getResponse(String response) {

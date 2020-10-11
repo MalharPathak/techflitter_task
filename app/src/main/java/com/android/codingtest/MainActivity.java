@@ -33,8 +33,8 @@ create=findViewById(R.id.create_user);
         viewPagerAdapter=new ViewPagerAdapter(getSupportFragmentManager());
 
         //ViewPager
-        viewPagerAdapter.addFragment(new Users(),"Users");
-        viewPagerAdapter.addFragment(new Metadata(),"Metadata");
+        viewPagerAdapter.addFragment(new Users(),"");
+        viewPagerAdapter.addFragment(new Metadata(),"");
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
 
