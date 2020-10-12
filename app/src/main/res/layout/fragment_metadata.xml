@@ -1,14 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Metadata">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/txt_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Page Info"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/total_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total User"
+        android:layout_below="@id/txt_info"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="25dp"
+        />
+    <TextView
+        android:id="@+id/total_pages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Pages"
+        android:layout_below="@id/total_user"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="25dp"
+        />
+    <TextView
+        android:id="@+id/current_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Page"
+        android:layout_below="@id/total_pages"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/user_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Limit"
+        android:layout_below="@id/current_page"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="25dp"
+        />
+
+
+
+
+</RelativeLayout>
